@@ -80,14 +80,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Submit PGP Key</h4>
+            <h4 class="modal-title" id="myModalLabel">Submit OpenPGP Key</h4>
           </div>
           <div class="modal-body">
             <form action="/pks/add" method="post" id="keySubmitForm">
               <div class="control-group">
                 <label class="control-label" for="textarea">Enter an ASCII-armored OpenPGP key:</label>
                 <div class="controls">
-                  <textarea id="textarea" name="keytext" rows="5" style="width: 100%;"></textarea>
+                  <textarea id="textarea" name="keytext" rows="15" style="width: 100%;"></textarea>
                 </div>
               </div>
             </form>
