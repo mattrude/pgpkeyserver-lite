@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="OpenPGP Keyserver">
+
+      <title>OpenPGP Keyserver</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+     <div class="page-header" id="banner" style="border-bottom: 0px;">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center"><strong>OpenPGP</strong>keyserver</h1>
+          </div>
+        </div>
+      </div>
+    </div><!--closing page header container-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <form action="/pks/lookup" method="get" class="form" role="form">
+            <div class="control-group">
+              <div class="controls">
+                <input name="search" class="form-control" type="text" style="font-size: 1.5em; line-height: 1.5em; height: 2em;"/>
+              </div>
+            </div>
+            <div class="control-group text-center" style="margin-top: 0.5em;">
+              <div class="controls">
+                <button type="submit" class="btn btn-primary">Search Key</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit Key</button>
+              </div>
+            </div>
+            <div class="text-center" style="margin-top: 0.5em;">
+              <a data-toggle="collapse" data-target="#advancedOptionsCollapse" href="#">Advanced Options</a>
+            </div>
+            <div id="advancedOptionsCollapse" class="collapse col-md-4 col-md-offset-4">
+              <div class="control-group">
+                <div class="controls">
+                  <label class="checkbox" for="fingerprint">
+                    <input type="checkbox" name="fingerprint" checked="checked" />
+                    Show OpenPGP "fingerprints" for keys
+                  </label>
+                  <label class="checkbox" for="exact">
+                    <input type="checkbox" name="exact" />
+                    Only return exact matches
+                  </label>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <label class="radio" for="radios-0">
+                    <input name="op" id="radios-0" value="index" checked="checked" type="radio">
+                    Get regular index of matching keys
+                  </label>
+                  <label class="radio" for="radios-1">
+                    <input name="op" id="radios-1" value="vindex" type="radio">
+                    Get <strong>verbose</strong> index of matching keys
+                  </label>
+                </div>
+              </div>
+            <div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Submit PGP Key</h4>
+          </div>
+          <div class="modal-body">
+            <form action="/pks/add" method="post" id="keySubmitForm">
+              <div class="control-group">
+                <label class="control-label" for="textarea">Enter an ASCII-armored OpenPGP key:</label>
+                <div class="controls">
+                  <textarea id="textarea" name="keytext" rows="5" style="width: 100%;"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onClick="$('#keySubmitForm').submit();">Submit Key</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
