@@ -1,4 +1,4 @@
-# OpenPGP Keyserver Site - Lite
+# OpenPGP Keyserver Website - Lite
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
