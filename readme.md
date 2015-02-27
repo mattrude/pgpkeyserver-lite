@@ -47,7 +47,7 @@ If you wish to use this project, you will need to modify the `index.html` file s
                   GNU GENERAL PUBLIC LICENSE
                      Version 2, June 1991
 
-    Copyright (C) 2012-2014 Matt Rude <matt@mattrude.com>
+    Copyright (C) 2012-2015 Matt Rude <matt@mattrude.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
