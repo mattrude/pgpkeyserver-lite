@@ -1,8 +1,15 @@
 # OpenPGP Keyserver Site - Lite
 
-This repository holds the source of my OpenPGP Keyservers website, but the lite version of it.
+This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
-This site is a static site using [bootstraps](http://getbootstrap.com/).
+This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.2.
+
+## Using on your own site
+This project is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
+
+The content of this repository may be dropped directly in your webserver's content directory, or it may be placed in a directory named `html` within your `/var/lib/sks` system directory.
+
+If you wish to use this project, you will need to modify the `index.html` file slightly to remove my contact information.  First on [line 153](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L153), change my name to your own. Then just below from [line 156]( https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L156) to [line 186](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L186), remove my OpenPGP key and replace it with your own.  Lastly, on [line 246](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L246), change my name to your own for the contact popup.
 
 ## Nginx Configuration
 
@@ -22,21 +29,16 @@ This site is a static site using [bootstraps](http://getbootstrap.com/).
         server_name pgp.ipfire.org;
         server_name keys.gnupg.net;
         root /var/www/html;
-
-        rewrite ^/stats /pks/lookup?op=stats;
-        rewrite ^/s/(.*) /pks/lookup?search=$1;
-        rewrite ^/search/(.*) /pks/lookup?search=$1;
-        rewrite ^/g/(.*) /pks/lookup?op=get&search=$1;
-        rewrite ^/get/(.*) /pks/lookup?op=get&search=$1;
-        rewrite ^/d/(.*) /pks/lookup?op=get&options=mr&search=$1;
-        rewrite ^/download/(.*) /pks/lookup?op=get&options=mr&search=$1;
-
+        
+        location ~ (.git|readme.md) {
+            deny all;
+            return 404;
+        }
+        
         location /pks {
             proxy_pass         http://127.0.0.1:11371;
             proxy_pass_header  Server;
             add_header         Via "1.1 <set-your-hostname>:11371 (nginx)";
-            proxy_ignore_client_abort on;
-            client_max_body_size 8m;
         }
     }
 
