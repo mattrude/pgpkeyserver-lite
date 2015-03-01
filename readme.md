@@ -7,7 +7,7 @@ This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.2.
 ## Using on your own site
 This project is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
 
-The content of this repository may be dropped directly in your webserver's content directory, or it may be placed in a directory named `html` within your `/var/lib/sks` system directory.
+The content of this repository may be dropped directly in your webserver's content directory, with minor modification to update the contact method.
 
 If you wish to use this project, you will need to modify the `index.html` file slightly to remove my contact information.  First on [line 153](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L153), change my name to your own. Then just below from [line 156]( https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L156) to [line 186](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L186), remove my OpenPGP key and replace it with your own.  Lastly, on [line 246](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L246), change my name to your own for the contact popup.
 
@@ -25,7 +25,6 @@ If you wish to use this project, you will need to modify the `index.html` file s
         server_name <set-your-hostname>;
         server_name pool.sks-keyservers.net;
         server_name *.pool.sks-keyservers.net;
-        server_name pgp.mit.edu;
         server_name pgp.ipfire.org;
         server_name keys.gnupg.net;
         root /var/www/html;
