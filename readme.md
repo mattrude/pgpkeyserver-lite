@@ -7,9 +7,9 @@ This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.2.
 ## Using on your own site
 This project is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
 
-The content of this repository may be dropped directly in your webserver's content directory, with minor modification to update the contact method.
+The content of this repository may be dropped directly in your webserver&#39;s content directory, with minor modification to update the contact method.
 
-If you wish to use this project, you will need to modify the `index.html` file slightly to remove my contact information.  First on [line 153](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L153), change my name to your own. Then just below from [line 156]( https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L156) to [line 186](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L186), remove my OpenPGP key and replace it with your own.  Lastly, on [line 246](https://github.com/mattrude/pgpkeyserver-lite/blob/master/index.html#L246), change my name to your own for the contact popup.
+After downloading and extracting the tarball, you need to modify the site to reflect the setup of your keyserver. There are two sections that need to be replaced. first you need to replace all instances of `###ENTERNAMEHERE###` with your own name. Next, replace all instances of `###ENTERPUBLICKEYHERE###` with your public key. Or you may of course modify the site in anyway you wish.
 
 ## Nginx Configuration
 
@@ -20,7 +20,7 @@ If you wish to use this project, you will need to modify the `index.html` file s
     server {
         listen 80;
         listen [::]:80;
-        listen <set-your-IP>11371;
+        listen <set-your-IP>:11371;
         listen [set-your-IPv6-IP]:11371;
         server_name <set-your-hostname>;
         server_name pool.sks-keyservers.net;
