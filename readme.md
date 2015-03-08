@@ -11,7 +11,7 @@ The content of this repository may be dropped directly in your webserver&#39;s c
 
 After downloading and extracting the tarball, you need to modify the site to reflect the setup of your keyserver. There are two sections that need to be replaced. first you need to replace all instances of `###ENTERNAMEHERE###` with your own name. Next, replace the instance of `###ENTERPUBLICKEYHERE###` with your public key. Or you may of course modify the site in anyway you wish.
 
-You may also see other examples of [configuration in the wiki](https://github.com/mattrude/pgpkeyserver-lite/wiki).
+You may also see other examples of [configuration files in the wiki](https://github.com/mattrude/pgpkeyserver-lite/wiki).
 
 ## Nginx Configuration
 
