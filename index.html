@@ -28,6 +28,9 @@
             margin: 20px 0;
         }
       </style>
+      <script>
+        $(function () { $("input,textarea").not("[type=button]").jqBootstrapValidation(); } );
+      </script>
   </head>
   <body>
     <div id="wrap">
@@ -46,7 +49,7 @@
             <form action="/pks/lookup" method="get" class="form" role="form">
               <div class="control-group">
                 <div class="controls" style="max-width:30em; margin:0 auto;">
-                  <input name="search" class="form-control" type="text" placeholder="Search for a OpenPGP Public Key, ie 0x..." style="font-size: 1.5em; line-height: 1.5em; height: 2em;"/>
+                  <input name="search" class="form-control" type="text" placeholder="Search for a OpenPGP Public Key, ie 0x..." style="font-size: 1.5em; line-height: 1.5em; height: 2em;" required />
                 </div>
               </div>
               <div class="control-group text-center" style="margin-top: 0.5em;">
@@ -123,17 +126,17 @@
               <form action="/pks/add" method="post" id="keySubmitForm">
                 <div class="control-group">
                   <div class="controls">
-                    <textarea id="textarea" name="keytext" rows="20" style="width: 100%;" placeholder="Enter your ASCII-armored OpenPGP public key here"></textarea>
+                    <textarea id="textarea" name="keytext" rows="20" style="width: 100%;font-family:Courier;font-size:12px;" placeholder="Enter your ASCII-armored OpenPGP public key here" required ></textarea>
                   </div>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-cloud-upload"></span>
+                    Submit Public Key
+                  </button>
+                </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onClick="$('#keySubmitForm').submit();">
-                <span class="glyphicon glyphicon-cloud-upload"></span>
-                Submit Public Key
-              </button>
             </div>
           </div>
         </div>
@@ -214,5 +217,6 @@
     </div>
     <script src="assets/jquery/1.11.2/jquery.min.js"></script>
     <script src="assets/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="assets/jqBootstrapValidation.js/1.3.7/jqBootstrapValidation-1.3.7.min.js"></script>
   </body>
 </html>
