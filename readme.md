@@ -9,9 +9,27 @@ This project is licensed under the [GNU General Public License, version 2](http:
 
 The content of this repository may be dropped directly in your webserver&#39;s content directory, with minor modification to update the contact method.
 
+### Installing
+This is a simple "drop in site", as you only need to put the files in the correct spot for them to do there thing.
+
+The simplist way of installing this site is via [git]](http://git-scm.com/), you may install it with the below commands.
+
+Assuming your webserver will server data in `/var/www/html`:
+
+    git clone git@github.com:mattrude/pgpkeyserver-lite.git /var/www/html
+
+If you do not wish to use git, you may just download it via the below command.
+
+    mkdir -p /var/www/html && \
+    curl -sL "https://github.com/mattrude/pgpkeyserver-lite/archive/master.tar.gz" |tar -xz --strip=1 -C /var/www/html/
+
+### Configuring
+
 After downloading and extracting the tarball, you need to modify the site to reflect the setup of your keyserver. There are two sections that need to be replaced. first you need to replace all instances of `###ENTERNAMEHERE###` with your own name. Next, replace the instance of `###ENTERPUBLICKEYHERE###` with your public key. Or you may of course modify the site in anyway you wish.
 
 You may also see other examples of [configuration files in the wiki](https://github.com/mattrude/pgpkeyserver-lite/wiki).
+
+This project is intented to be served via a real webserver ([nginx](http://nginx.org/en/), [apache](http://httpd.apache.org/), [lighttpd](http://www.lighttpd.net/)), if you wish to run sks without a proxy setup, you may use the [inline](https://github.com/mattrude/pgpkeyserver-lite/tree/inline) version of this project.
 
 ## Nginx Configuration
 
