@@ -2,7 +2,7 @@
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
-This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.2.
+This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.6.
 
 ## Using on your own site
 This project is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
@@ -48,12 +48,12 @@ This project is intented to be served via a real webserver ([nginx](http://nginx
         server_name pgp.ipfire.org;
         server_name keys.gnupg.net;
         root /var/www/html;
-        
+
         location ~ (.git|readme.md) {
             deny all;
             return 404;
         }
-        
+
         location /pks {
             proxy_pass         http://127.0.0.1:11371;
             proxy_pass_header  Server;
