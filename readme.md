@@ -1,4 +1,5 @@
 # OpenPGP Keyserver Website - Lite
+[![Build Status](https://travis-ci.org/mattrude/pgpkeyserver-lite.svg?branch=master)](https://travis-ci.org/mattrude/pgpkeyserver-lite)
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
