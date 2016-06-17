@@ -13,7 +13,7 @@ The content of this repository may be dropped directly in your webserver&#39;s c
 ### Installing
 This is a simple "drop in site", as you only need to put the files in the correct spot for them to do there thing.
 
-The simplist way of installing this site is via [git]](http://git-scm.com/), you may install it with the below commands.
+The simplist way of installing this site is via [git](http://git-scm.com/), you may install it with the below commands.
 
 Assuming your webserver will server data in `/var/www/html`:
 
