@@ -1,6 +1,6 @@
 # OpenPGP Keyserver Website - Lite
 
-[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v1.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v1.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](http://github.com/mattrude/pgpkeyserver-lite)
+[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v2.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v2.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](http://github.com/mattrude/pgpkeyserver-lite)
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
@@ -52,7 +52,7 @@ This project is intented to be served via a real webserver ([nginx](http://nginx
         root /var/www/html;
         error_page 404 /404.html;
 
-        location ~ (.git|readme.md) {
+        location ~ (.git|LICENSE|readme.md) {
             deny all;
             return 404;
         }
