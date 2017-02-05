@@ -1,11 +1,13 @@
 # OpenPGP Keyserver Website - Lite
 
+[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v1.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v1.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](http://github.com/mattrude/pgpkeyserver-lite)
+
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
 This is a static site using [bootstraps](http://getbootstrap.com/) v3.3.7.
 
 ## Using on your own site
-This project is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
+This project is licensed under the [GNU General Public License, version 3](http://www.gnu.org/licenses/gpl-3.0.html), with this license, you are free to download, modify, and share this project, as long as you persurve those same rights for others.
 
 The content of this repository may be dropped directly in your webserver&#39;s content directory, with minor modification to update the contact method.
 
@@ -65,16 +67,20 @@ This project is intented to be served via a real webserver ([nginx](http://nginx
 ## License
 
                   GNU GENERAL PUBLIC LICENSE
-                     Version 2, June 1991
+                    Version 3, 29 June 2007
 
+    OpenPGP Key Server Website for keyserver.mattrude.com
     Copyright (C) 2012-2015 Matt Rude <matt@mattrude.com>
 
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
