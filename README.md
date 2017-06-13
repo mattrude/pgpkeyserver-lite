@@ -70,7 +70,7 @@ This project is intented to be served via a real webserver ([nginx](http://nginx
                     Version 3, 29 June 2007
 
     OpenPGP Key Server Website "pgpkeyserver-lite"
-    Copyright (C) 2012-2015 Matt Rude <matt@mattrude.com>
+    Copyright (C) 2012-2017 Matt Rude <matt@mattrude.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
