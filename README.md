@@ -1,6 +1,6 @@
 # OpenPGP Keyserver Website - Lite
 
-[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v2.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v2.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](http://github.com/mattrude/pgpkeyserver-lite)
+[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v2.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v2.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](http://github.com/mattrude/pgpkeyserver-lite)
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
@@ -70,7 +70,7 @@ This project is intented to be served via a real webserver ([nginx](http://nginx
                     Version 3, 29 June 2007
 
     OpenPGP Key Server Website "pgpkeyserver-lite"
-    Copyright (C) 2012-2017 Matt Rude <matt@mattrude.com>
+    Copyright (C) 2012-2018 Matt Rude <matt@mattrude.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
