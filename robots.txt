@@ -1,2 +1,8 @@
 User-agent: *
 Disallow: /pks/
+Disallow: /d/
+Disallow: /g/
+Disallow: /s/
+Disallow: /download/
+Disallow: /get/
+Disallow: /search/
