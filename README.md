@@ -1,6 +1,6 @@
 # OpenPGP Keyserver Website - Lite
 
-[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v2.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v2.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](http://github.com/mattrude/pgpkeyserver-lite)
+[![GitHub license](https://img.shields.io/github/license/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/blob/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/tags) [![GitHub commits since](https://img.shields.io/github/commits-since/mattrude/pgpkeyserver-lite/v2.0.svg)](https://github.com/mattrude/pgpkeyserver-lite/compare/v2.0...master) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/pgpkeyserver-lite.svg)](https://github.com/mattrude/pgpkeyserver-lite/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)](http://github.com/mattrude/pgpkeyserver-lite)
 
 This repository holds the website for my OpenPGP Keyserver, but the lite version of it.
 
