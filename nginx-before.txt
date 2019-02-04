@@ -48,10 +48,10 @@
     <p>This page contains dumps to allow you to create your <a href='https://gist.github.com/mattrude/84aa65d1bb2bbf9bd81370ec6cdbf91a'>own keyserver</a>.</p>
     <ul>
         <li>The below dumps are created by the <a href='https://gist.github.com/mattrude/b0ac735d07b0031bb002'>sks-dump-script.sh</a> script.</li>
-        <li>Dumps are created at <b>8:00 UTC</b> (2am CST)</li>
+        <li>Dumps are created at <b>2:00 UTC</b> (8pm CST)</li>
         <li>Dumps are created each day of the week.</li>
         <li>All times below are in the <b>UTC</b> time zone.</li>
-        <li>The script will keep the last <b>5</b> days of dumps.</li>
+        <li>The script will keep the last <b>3</b> days of dumps.</li>
         <li>See the <a href='https://keyserver.mattrude.com/dump/current/README.txt'>README.txt</a> file within each dump folder for more information about each build.</li>
     </ul>
   </div>
