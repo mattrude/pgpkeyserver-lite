@@ -45,9 +45,9 @@
 
 
   <div class="col-md-6">
-    <p>This page contains dumps to allow you to create your <a href='https://keyserver.mattrude.com/guides/building-server/'>own keyserver</a>.</p>
+    <p>This page contains dumps to allow you to create your <a href='https://gist.github.com/mattrude/84aa65d1bb2bbf9bd81370ec6cdbf91a'>own keyserver</a>.</p>
     <ul>
-        <li>The below dumps are created by the <a href='https://keyserver.mattrude.com/guides/dump-process/'>sks-dump-script.sh</a> script.</li>
+        <li>The below dumps are created by the <a href='https://gist.github.com/mattrude/b0ac735d07b0031bb002'>sks-dump-script.sh</a> script.</li>
         <li>Dumps are created at <b>8:00 UTC</b> (2am CST)</li>
         <li>Dumps are created each day of the week.</li>
         <li>All times below are in the <b>UTC</b> time zone.</li>
