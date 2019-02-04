@@ -7,7 +7,7 @@
 
       <title>OpenPGP Keyserver</title>
       <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-      <link href="assets/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="/assets/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <style type="text/css">
         html,body {
           height: 100%;
@@ -32,7 +32,7 @@
   <body>
     <div id="wrap">
       <div class="container">
-        <div class="page-header" id="banner" style="border-bottom: 0px;">
+        <div class="page-header" id="banner" style="border-bottom:0px;padding-bottom:50px;">
           <div class="row">
             <div class="col-lg-12">
               <h1 class="text-center"><strong>OpenPGP</strong>keyserver</h1>
@@ -40,79 +40,18 @@
           </div>
         </div>
       </div><!--closing page header container-->
-      <div class="container">
+      <div class="container" style="max-width:600px;">
         <div class="row">
-          <h1 class="text-center">Error <strong>404</strong><h1>
-          <p class="text-center">The page or file you are looking for</p>
-          <p class="text-center"> can not be found, please try again.</p>
-        </div>
-      </div>
-      <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="ContactLabel">###ENTERNAMEHERE###'s OpenPGP Public Key</h4>
-            </div>
-            <div class="modal-body">
-              <p>If you have any issues or concerns about this site, or if you wish to peer with this server, please contact me via the email address within the below public key.</p>
-              <pre>
-###ENTERPUBLICKEYHERE###
-              </pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="AboutLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="AboutLabel">About this Server</h4>
-            </div>
-            <div class="modal-body">
-              <p><strong>OpenPGP</strong> is a method of encrypting and/or signing data (for example an email) in a secure “<em>end to end</em>” way.
-                This means, the message is encrypted on your computer, using the recipient’s public key,
-                in a way that the e-mail server has no knowledge of the content of the message.
-                The recipient of the message then decrypts the message on their own computer using their private key.</p>
-              <p>This server is a member of the <a href="https://sks-keyservers.net" target="_blank">sks-keyserver</a> pool of servers. It hosts OpenPGP keys in a fashion that allows them to be quickly and easily retrieved and used by different client software.</p>
-              <p>You may connect to this server by adding one of the following  entries to your OpenPGP client software.</p>
-              <div class="col-md-6">
-                <ul>
-                  <li>pool.sks-keyservers.net</li>
-                  <li>na.pool.sks-keyservers.net</li>
-                  <li>eu.pool.sks-keyservers.net</li>
-                  <li>oc.pool.sks-keyservers.net</li>
-                </ul>
-              </div>
-              <div class="col-md-offset-6">
-                <ul>
-                  <li>p80.pool.sks-keyservers.net</li>
-                  <li>ipv4.pool.sks-keyservers.net</li>
-                  <li>ipv6.pool.sks-keyservers.net</li>
-                  <li>subset.pool.sks-keyservers.net</li>
-                </ul>
-              </div>
-              <p><b>Note:</b> <i>keys.gnupg.net</i> and <i>pgp.ipfire.org</i> are both alias for pool.sks-keyservers.net. Requests sent to either of these hosts will also be served by this server.</p>
-              <hr />
-              <h5>OpenPGP Resources</h5>
-              <ul>
-                <li><a href="https://gnupg.org/" target="_blank">GnuPG Homepage</a> - The main location for the OpenPGP Standard.</li>
-                <li><a href="https://sks-keyservers.net/" target="_blank">SKS Keyserver Homepage</a> - The keyserver software running on this server.</li>
-                <li><a href="http://www.pgp.com/" target="_blank">PGP Inc.</a> - The historical home of PGP, but has since been sold to Symantec.</li>
-                <li><a href="https://emailselfdefense.fsf.org/en/" target="_blank">Email Self-defense</a> - A teaching site about how to use OpenPGP to communicate.</li>
-                <li><a href="http://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank">Wikipedia - Pretty Good Privacy</a> - A nice overview of what OpenPGP is.</li>
-              </ul>
-            </div>
-          </div>
+          <h1 class="text-center">Error:<strong>404</strong><h1>
+          <h3 class="text-center">The page or file you are looking for can not be found, please try again.</h3>
         </div>
       </div>
     </div><!--Closing content wrap-->
     <div id="footer">
       <div class="container">
-        <div style="max-width: 20em; float: left;" >
+        <div style="max-width:20em; float:left;" >
           <p class="muted credit small">
-            <a href="#/">home</a> |
+            <a href="/">home</a> |
             <a href="/pks/lookup?op=stats">statistics</a>
           </p>
         </div>
