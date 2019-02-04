@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="OpenPGP Keyserver">
+
+      <title>OpenPGP Keyserver</title>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+      <link href="/assets/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        html,body {
+          height: 100%;
+        }
+        #wrap {
+          min-height: 100%;
+          height: auto !important;
+          height: 100%;
+          margin: 0 auto -60px;
+        }
+        #push,#footer {
+          height: 60px;
+        }
+        #footer {
+          background-color: #f5f5f5;
+        }
+        .container .credit {
+            margin: 20px 0;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <div class="page-header" id="banner" style="border-bottom: 0px;">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="text-center"><strong>OpenPGP</strong>keyserver</h1>
+            </div>
+          </div>
+        </div>
+      </div><!--closing page header container-->
+      <div class="container">
+        <div class="row">
+
+
+  <div class="col-md-6">
+    <p>This page contains dumps to allow you to create your <a href='https://keyserver.mattrude.com/guides/building-server/'>own keyserver</a>.</p>
+    <ul>
+        <li>The below dumps are created by the <a href='https://keyserver.mattrude.com/guides/dump-process/'>sks-dump-script.sh</a> script.</li>
+        <li>Dumps are created at <b>8:00 UTC</b> (2am CST)</li>
+        <li>Dumps are created each day of the week.</li>
+        <li>All times below are in the <b>UTC</b> time zone.</li>
+        <li>The script will keep the last <b>5</b> days of dumps.</li>
+        <li>See the <a href='https://keyserver.mattrude.com/dump/current/README.txt'>README.txt</a> file within each dump folder for more information about each build.</li>
+    </ul>
+  </div>
+
+  <div class="col-md-6 col-pull-right">
+    <div class="alert alert-info">
+      <h3><center><span class="glyphicon glyphicon-download" style="font-size:0.8em;"></span> <strong>FTP Download</strong></center></h3>
+      <p>You may instead download my <b>FTP</b> server found at <a href="ftp://keyserver.mattrude.com">ftp://keyserver.mattrude.com</a>.</p>
+      <p>Use the following command:</p> <pre style="font-size:0.85em;">wget -m -nH --cut-dirs=3 ftp://keyserver.mattrude.com/current</pre>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <p><strong>Use the below command to download all the current dump files.</strong></p>
+    <pre>wget -crp -e robots=off -l1 --no-parent --cut-dirs=3 -nH -A pgp,txt https://keyserver.mattrude.com/dump/current/</pre>
+  </div>
+</div>
