@@ -11,7 +11,7 @@
           </p>
         </div>
         <div style="float:right;">
-          <p class="muted credit small">Provided as a public service by <a href="#" data-toggle="modal" data-target="#contact">Matt Rude</a>.</p>
+          <p class="muted credit small">Provided as a public service by <a href="/d/0xd6343afdfab5a437">Matt Rude</a>.</p>
         </div>
       </div>
     </div>
